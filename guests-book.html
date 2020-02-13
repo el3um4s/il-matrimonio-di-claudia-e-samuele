@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Claudia e Samuele</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="manifest" href="appmanifest.json">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
+	<link rel="icon" type="image/png" href="icons/icon-512.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+	<div class="alto">
+			<div id="logo_noi_con_nomi" class="logo_menu" onclick="javascript:window.location.href='index.html'"></div>
+	</div>
+	<div class="vuotosx"></div>
+	<div class="contentuto">
+		<div class="menu_pagine orizzontale_center verticale_center">
+			<div id="guests_book-01" class="guests_book"></div>
+		</div>
+	</div>
+	<div class="vuotodx"></div>
+</div>
+
+<style>
+	.guests_book {min-width:300px;height:200px;}
+	#guests_book-01 {background: url('guests-book/guests-book-300px.jpg') center center no-repeat;}
+
+  @media all and (min-width: 501px) {
+		.guests_book {min-width:500px;height:333px;}
+    #guests_book-01 {background: url('guests-book/guests-book-500px.jpg') center center no-repeat;}
+  }
+</style>
+
+</body>
+</html>

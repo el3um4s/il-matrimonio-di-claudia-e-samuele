@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'Odelette';
+	src: url('odelette.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('opensans-regular.ttf') format('truetype');
+}
+
+body {background-color:#F0F0F0;}
+.container {
+	display: grid;
+	grid-template-columns: 1fr minmax(300px, 720px) 1fr;
+	grid-template-rows: 128px 1fr;
+	grid-template-areas: "vuotosx alto vuotodx"
+												"vuotosx contenuto vuotodx";
+	grid-row-gap: 8px;
+}
+.vuotosx {grid-area: vuotosx;}
+.vuotodx {grid-area: vuotodx;}
+.alto {
+	grid-area: alto;
+	display: grid;
+	grid-template-columns: minmax(300px, 720px);
+	grid-template-rows: auto;
+	position: sticky;
+	top: 0px;
+	background-color: #f0f0f0;
+	border-bottom: 2px solid #dadada;
+}
+.contenuto {
+	grid-area: contenuto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+.menu_pagine {
+	display: grid;
+	grid-template-columns: minmax(300px, 720px);
+	grid-template-rows: auto;
+	grid-row-gap: 8px;
+}
+.orizzontale_center { justify-self: center;	}
+.verticale_center {	align-self: center;	}
+.orizzontale_left { justify-self: start;}
+
+.logo_menu {min-width:300px; height:128px;}
+#logo_noi_con_nomi {background: url('images/logo_noi_con_nomi-300px.png') center center no-repeat;}
+@media all and (min-width: 501px) and (max-width: 600px) {#logo_noi_con_nomi {background: url('images/logo_noi_con_nomi-500px.png') center center no-repeat;}}
+@media all and (min-width: 601px) and (max-width: 700px) {#logo_noi_con_nomi {background: url('images/logo_noi_con_nomi-600px.png') center center no-repeat;}}
+@media all and (min-width: 701px) {#logo_noi_con_nomi {background: url('images/logo_noi_con_nomi-700px.png') center center no-repeat;}}
